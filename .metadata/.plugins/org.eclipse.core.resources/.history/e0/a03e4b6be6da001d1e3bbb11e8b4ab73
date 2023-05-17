@@ -1,0 +1,6 @@
+course.choose=uiCourse
+
+INFO = true
+
+logging.level.in.ineuron.beans=DEBUG
+logging.file.name=D://log.txt

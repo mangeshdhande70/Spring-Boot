@@ -1,0 +1,5 @@
+2023-04-14 22:37:54 [main] INFO  i.i.BootLoggingUsingLog4jApplication - Starting BootLoggingUsingLog4jApplication using Java 17.0.6 on PUNITP539917L with PID 34404 (D:\Spring All\SpringBoot\Boot-logging-using-Log4j\target\classes started by mangesh.dhande in D:\Spring All\SpringBoot\Boot-logging-using-Log4j)
+2023-04-14 22:37:54 [main] INFO  i.i.BootLoggingUsingLog4jApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-14 22:37:56 [main] INFO  i.i.BootLoggingUsingLog4jApplication - Started BootLoggingUsingLog4jApplication in 2.307 seconds (JVM running for 4.151)
+2023-04-14 22:37:56 [main] DEBUG in.ineuron.beans.UICourseMaterial - content enter inside UICourseMaterial.courseContent() 
+2023-04-14 22:37:56 [main] INFO  in.ineuron.beans.Student - Price Set

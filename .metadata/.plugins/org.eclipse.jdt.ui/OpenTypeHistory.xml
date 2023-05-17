@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=Boot-02-BasicApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ineuron.service{ICourse.java[ICourse" modifiers="513" timestamp="1680270003457"/>
+    <typeInfo handle="=Boot-03-BasicApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ineuron.dao{ICustomerDAO.java[ICustomerDAO" modifiers="513" timestamp="1680274924099"/>
+    <typeInfo handle="=Boot-03-BasicApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ineuron.service{ICustomerService.java[ICustomerService" modifiers="513" timestamp="1680276971278"/>
+    <typeInfo handle="=Boot-04-BasicApp-my/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ineuron.dao{IPlayerDAO.java[IPlayerDAO" modifiers="513" timestamp="1680450087489"/>
+    <typeInfo handle="=Boot-04-BasicApp-my/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ineuron.service{IPlayerService.java[IPlayerService" modifiers="513" timestamp="1680427929380"/>
+    <typeInfo handle="=Boot-04-BasicApp-my/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ineuron.dao{IEmailDAO.java[IEmailDAO" modifiers="513" timestamp="1680459030498"/>
+</typeInfoHistroy>

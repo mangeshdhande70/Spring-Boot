@@ -1,0 +1,79 @@
+package in.ineuron.dao;
+
+import java.util.List;
+
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+import javax.sql.DataSource;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
+
+import in.ineuron.model.Player;
+
+@Repository
+public class PlayerDAOImpl implements IPlayerDAO {
+	
+	@Autowired
+	@Qualifier("sessionBean")
+	private SessionFactory sessionFactory;
+	
+	@Autowired
+	private EntityManager entityManager;
+	
+
+	
+	@Autowired
+	@Qualifier("hiber")
+	private DataSource dataSource;
+
+	@Override
+	public boolean save(Player player) {
+		
+		int rowAffect = 0;
+		
+	      Session session = sessionFactory.getCurrentSession();
+	
+	      try {
+	      
+		  rowAffect = (int) session.save(player);
+	      }catch (HibernateException e) {
+	    	  return false;
+		}catch (Exception e) {
+			return false;
+		}
+		
+		  return rowAffect>0?true:false;
+	}
+	
+	
+	public List<Player> findAllPlayers() {
+		
+		
+		Session session = sessionFactory.openSession();
+		
+		CriteriaBuilder builder = session.getCriteriaBuilder();
+		
+		CriteriaQuery<Player> criteriaQuery = builder.createQuery(Player.class);
+		
+		Root<Player> root = criteriaQuery.from(Player.class);
+		
+		criteriaQuery.select(root);
+		
+		Query<Player> query = session.createQuery(criteriaQuery);
+		
+		List<Player> list = query.list();
+	
+			
+		return list;
+	}
+	
+
+
+}
